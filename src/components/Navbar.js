@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-left">
         {/* Home icon that navigates to the landing page */}
-        <Link to="/" className="home-icon">
+        <Link to="/admin-dashboard" className="home-icon">
           <FaHome size={30} />
         </Link>
       </div>
