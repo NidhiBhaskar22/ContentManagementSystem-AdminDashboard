@@ -1,0 +1,129 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #004d40;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  left: 0;
+  right: 0;
+}
+
+/* For left part of navbar (Home icon) */
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home-icon {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Center part of navbar (Logo) */
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+/* For right part of navbar (Profile icon) */
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px; /* Added some extra margin for right padding */
+  position: relative; /* To position the dropdown correctly */
+}
+
+/* Profile icon and hover effect */
+.profile-icon-link {
+  color: white; /* Default icon color */
+  text-decoration: none;
+}
+
+.profile-icon-link:hover {
+  color: #00bfae; /* Light green on hover */
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Dropdown Menu Styling */
+.profile-dropdown {
+  position: absolute;
+  top: 50px; /* Adjust as needed for the dropdown to appear below the profile icon */
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  padding: 10px 0;
+  z-index: 20;
+}
+
+.dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Logout Confirmation Modal */
+.logout-confirmation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  z-index: 30;
+}
+
+.logout-confirmation button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-confirmation button:hover {
+  background-color: #333;
+}
+
+/* Ensure the content below navbar doesn't get hidden */
+body {
+  margin-top: 80px; /* This will add space to the top to prevent overlap with navbar */
+}

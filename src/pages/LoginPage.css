@@ -1,0 +1,143 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Soft grey background */
+  }
+  
+  /* Login Page Container */
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3f2fd; /* Light blue background */
+  }
+  
+  .login-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Left Section */
+  .welcome-section {
+    flex: 1;
+    background: linear-gradient(135deg, #066128, #6cf685); 
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Right Section */
+  .login-section {
+    flex: 1.5;
+    background-color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .login-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1ea439;
+  }
+  
+  .login-section p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .role-selector {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .role-selector:focus {
+    outline: none;
+    border: 1px solid #0e8939;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .login-btn {
+    background-color: #11946a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: #43e9d8;
+  }
+  
+  .forgot-password {
+    color: #046257;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add styling for role selector */
+.role-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+  }
+  
+  .role-select:focus {
+    border-color: #076c5c;
+    outline: none;
+  }
+  
+  /* LoginPage.css */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-gif {
+  width: 200px; 
+  height: auto;
+  margin-top: 20px; /* Adjust spacing */
+}

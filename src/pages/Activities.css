@@ -1,0 +1,135 @@
+/* src/pages/Activities.css */
+.activities-page {
+    padding: 20px;
+    background-color: #f4f7fc;
+  }
+  
+  .activities-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .activities-header h1 {
+    font-size: 2rem;
+    color: #4a4a4a;
+  }
+  
+  .activities-search-filter {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .activities-search-filter input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+  }
+  
+  .filter-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .filter-dropdown select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .activity-list {
+    margin-top: 20px;
+  }
+  
+  .activity-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .activity-header strong {
+    color: #5c6bc0;
+  }
+  
+  .activity-timestamp {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  .activity-actions {
+    margin-top: 10px;
+  }
+  
+  .activity-actions button {
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .activity-actions button:hover {
+    background-color: #3f51b5;
+  }
+  
+  .edit-btn {
+    background-color: #4caf50;
+  }
+  
+  .edit-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .page-btn {
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .page-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .page-number {
+    font-size: 1rem;
+    color: #4a4a4a;
+  }
+  

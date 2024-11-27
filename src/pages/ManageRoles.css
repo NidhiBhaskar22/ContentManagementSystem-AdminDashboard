@@ -1,0 +1,195 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.role-management {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.role-management h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Roles Table */
+.roles-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.roles-table th, .roles-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.roles-table th {
+    background-color: #004d40;
+    color: white;
+}
+
+.roles-table td {
+    font-size: 1rem; /* Ensures uniform font size for all text */
+    color: #333;
+}
+
+.roles-table td:nth-child(2) {
+    font-weight: bold; /* Matches the style of Role Name */
+}
+
+.roles-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.roles-table td:nth-child(3) {
+    max-width: 300px; /* Prevent column from stretching */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Ensure ellipsis when content exceeds limit */
+}
+
+.roles-table td:nth-child(3):hover {
+    white-space: normal;
+    word-wrap: break-word; /* Enable wrapping on hover */
+    overflow: visible; /* Allow full view */
+}
+
+.roles-table td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.add-role-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-role-btn:hover {
+    background-color: #45a049;
+}
+
+/* Modal Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    width: 90%; /* Responsive width */
+    max-width: 700px; /* Maintain max width for larger screens */
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #004d40;
+}
+
+.role-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.role-form input,
+.role-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Permissions Section */
+.permissions {
+    display: block; /* Keep vertical alignment of permissions */
+    margin-bottom: 15px;
+}
+
+.permission-checkbox {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+    margin-bottom: 10px; /* Space between checkboxes */
+}
+
+.permission-checkbox input {
+    margin-right: 10px; /* Space between checkbox and label */
+    width: 18px;
+    height: 18px;
+}
+
+.permission-checkbox label {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Ensure spacing between buttons */
+}
+
+.save-btn, .cancel-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #004d40;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .roles-table td:nth-child(3) {
+        max-width: 200px; /* Reduce column width for smaller screens */
+    }
+
+    .modal-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .save-btn, .cancel-btn {
+        width: 100%; /* Full-width buttons for smaller screens */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}

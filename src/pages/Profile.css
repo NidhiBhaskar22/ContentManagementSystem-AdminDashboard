@@ -1,0 +1,110 @@
+/* src/pages/Profile.css */
+.profile-page {
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .profile-details {
+    margin-top: 20px;
+  }
+  
+  .profile-info h3,
+  .profile-settings h3 {
+    color: #004d40;
+  }
+  
+  .profile-info p,
+  .profile-settings button {
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+    color: white;
+  }
+  
+  /* Logout button styles */
+  .logout-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e60000;
+  }
+  
+  .logout-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .confirm-logout,
+  .cancel-logout {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .confirm-logout {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+  }
+  
+  .cancel-logout {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .confirm-logout:hover {
+    background-color: #e60000;
+  }
+  
+  .cancel-logout:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Added margin to create gap between buttons */
+  .profile-settings button + button {
+    margin-top: 20px; 
+  }
+  

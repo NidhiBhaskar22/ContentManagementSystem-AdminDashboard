@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+/* Global styles for layout */
+
+/* Reset body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Wrapper for the entire layout */
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevents scrollbars from appearing unnecessarily */
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #004d40;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 60px; /* Below the navbar */
+  left: 0;
+  width: 250px;
+  height: calc(100% - 60px); /* Full height minus navbar */
+  background-color: #dfe2e2;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Main content area */
+.main-content {
+  margin-top: 60px; /* Below the navbar */
+  margin-left: 250px; /* To the right of the sidebar */
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto; /* Enable scrolling for content */
+  background-color: #f8f9fa; /* Light background for content */
 }
