@@ -8,7 +8,7 @@ Upon accessing the application, users are prompted to log in by selecting a role
 Admin: Redirects to the Admin Dashboard.
 Other roles (e.g., Editor, Author, Visitor) redirect to their respective placeholder dashboards (in progress).
 Authentication is not yet implemented; any valid email/password combination is accepted.
-###Admin Dashboard:
+### Admin Dashboard:
 
 The primary view for administrators, featuring navigation to various RBAC-related pages:
 #### Manage Users: Add, edit, delete users, and assign roles or manage their status (e.g., Active/Inactive).
