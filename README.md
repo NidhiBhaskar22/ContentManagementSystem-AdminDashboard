@@ -24,13 +24,15 @@ Modular components ensure clarity and easy extensibility.
 ### Setup Instructions
 #### Clone the Repository
 
-git clone https://github.com/NidhiBhaskar22/ContentManagementSystem-AdminDashboard.git
-cd ContentManagementSystem-AdminDashboard
+##### git clone https://github.com/NidhiBhaskar22/ContentManagementSystem-AdminDashboard.git
 
-Install Dependencies
+##### cd ContentManagementSystem-AdminDashboard
+
+#### Install Dependencies
 
 npm install
-Run the Application
+
+#### Run the Application
 
 npm start
 
